@@ -1,0 +1,25 @@
+{
+  "general": {
+    "designResolution": {
+      "fitHeight": true
+    }
+  },
+  "__version__": "1.0.1",
+  "physics": {
+    "collisionGroups": [
+      {
+        "index": 1,
+        "name": "Spaceship"
+      },
+      {
+        "index": 2,
+        "name": "ground"
+      }
+    ],
+    "collisionMatrix": {
+      "0": 7,
+      "1": 7,
+      "2": 7
+    }
+  }
+}
