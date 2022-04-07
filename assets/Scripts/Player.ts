@@ -4,45 +4,6 @@ const { ccclass, property } = _decorator;
  
 @ccclass('Player')
 export class Player extends Component {
-<<<<<<< HEAD
-    left: boolean;
-   @property(Number)public xspeed : number = 0;
-   
-   @property
-   accce : number;
-   @property
-   maxmovement : number;
-   @property
-   x : Vec3;
-   @property(Node)public playernode : Node = null;
-   
-    @property(Prefab)public bullet: Prefab = null;
-    
-    
- 
-    direction: number;
-    right: boolean;
-    velocity: number;
-    @property(Number) public  walkforce: number = 0;
-   
-    rb: RigidBody2D;
-    bulletbtn: boolean;
-
-    
-   
-    
-     onLoad()
-     {
-      
-      
-        this.node.position = new Vec3(-21,-244,0);
-        systemEvent.on(SystemEventType.KEY_DOWN,this.keydown,this);
-        systemEvent.on(SystemEventType.KEY_UP,this.keyup,this);
-        
-       
-      this.rb =  this.node.getComponent(RigidBody2D);
-    
-=======
   left: boolean;
   @property
   xspeed: number = 1000;
@@ -113,14 +74,13 @@ export class Player extends Component {
 
         this.rb.sleep();
 
->>>>>>> 13bc9d6225f01188a0d31da003e54ff6cef66871
         this.direction = 0;
         this.velocity = 10;
         this.walkforce = 20;
     }
  
       
-       keydown(event)
+       this.keydown(event)
        {
           let keycodes = event.keyCode;
          switch(keycodes)
@@ -136,7 +96,7 @@ export class Player extends Component {
          }
 
        } 
-       keyup(event)
+       this.keyup(event)
        {
         let keycodes = event.keyCode;
         switch(keycodes)
@@ -162,7 +122,7 @@ export class Player extends Component {
            
            
        }
-       bulletthrow()
+       this.bulletthrow()
        {
         
           let bulletprefab = instantiate(this.bullet);
@@ -179,7 +139,7 @@ export class Player extends Component {
     
        
       
-       update(dt) 
+       this.update(dt) 
          {
            
           
@@ -208,4 +168,4 @@ export class Player extends Component {
          }
         
    
-}
+}  
