@@ -30,15 +30,15 @@ export class Player extends Component {
    x : Vec3;
    @property(Node)public playernode : Node = null;
    
-    @property(Prefab)
-    bullet: Prefab = null;
+    @property(Prefab)public bullet: Prefab = null;
+    
     
  
     direction: number;
     right: boolean;
     velocity: number;
-    @property(Number)
-    walkforce: number;
+    @property(Number) public  walkforce: number = 0;
+   
     rb: RigidBody2D;
     bulletbtn: boolean;
 
