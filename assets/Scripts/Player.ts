@@ -4,6 +4,7 @@ const { ccclass, property } = _decorator;
  
 @ccclass('Player')
 export class Player extends Component {
+<<<<<<< HEAD
     left: boolean;
    @property(Number)public xspeed : number = 0;
    
@@ -41,6 +42,78 @@ export class Player extends Component {
        
       this.rb =  this.node.getComponent(RigidBody2D);
     
+=======
+  left: boolean;
+  @property
+  xspeed: number = 1000;
+  @property(Number)public   accce: number = 0;
+
+  @property
+  maxmovement: number;
+  @property
+  x: Vec3;
+  @property(Node) public playernode: Node = null;
+
+  @property(Prefab) public bullet: Prefab = null;
+
+
+
+  direction: number;
+  right: boolean;
+  velocity: number;
+  @property(Number) public walkforce: number = 0;
+
+  rb: RigidBody2D;
+  bulletbtn: boolean;
+
+
+
+
+  onLoad() {
+
+
+    this.node.position = new Vec3(-21, -244, 0);
+    systemEvent.on(SystemEventType.KEY_DOWN, this.keydown, this);
+    systemEvent.on(SystemEventType.KEY_UP, this.keyup, this);
+
+
+    this.rb = this.node.getComponent(RigidBody2D);
+
+    this.direction = 0;
+    this.velocity = 10;
+    this.walkforce = 20;
+  }
+
+
+  keydown(event) {
+    let keycodes = event.keyCode;
+    switch (keycodes) {
+      case macro.KEY.left:
+        this.direction = -1;
+        this.rb.wakeUp();
+        break;
+      case macro.KEY.right:
+        this.rb.wakeUp();
+        this.direction = 1;
+        break;
+    }
+
+  }
+  keyup(event) {
+    let keycodes = event.keyCode;
+    switch (keycodes) {
+
+
+      case macro.KEY.left:
+        this.direction = 0;
+
+        this.rb.sleep();
+        break;
+      case macro.KEY.right:
+
+        this.rb.sleep();
+
+>>>>>>> 13bc9d6225f01188a0d31da003e54ff6cef66871
         this.direction = 0;
         this.velocity = 10;
         this.walkforce = 20;
