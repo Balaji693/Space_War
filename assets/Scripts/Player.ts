@@ -21,7 +21,7 @@ const { ccclass, property } = _decorator;
 export class Player extends Component {
     left: boolean;
    @property
-   xspeed : number = 1000;
+   xspeed : number = 0;
    @property
    accce : number;
    @property
