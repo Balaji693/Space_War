@@ -13,8 +13,8 @@ export class Bullet extends Component {
     // serializableDummy = 0;
     direction: number = 1;
    rb : RigidBody;
-   @property(Prefab)
-prefabs:Prefab = null;
+   @property(Prefab) public prefabs:Prefab = null;
+
     walkforce: number = 50;
     onLoad()
     {
