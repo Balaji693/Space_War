@@ -28,8 +28,8 @@ export class Player extends Component {
    maxmovement : number;
    @property
    x : Vec3;
-   @property
-   playernode : Node;
+   @property(Node)public playernode : Node = null;
+   
     @property(Prefab)
     bullet: Prefab = null;
     
