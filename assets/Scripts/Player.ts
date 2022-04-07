@@ -20,8 +20,8 @@ const { ccclass, property } = _decorator;
 @ccclass('Player')
 export class Player extends Component {
     left: boolean;
-   @property
-   xspeed : number = 0;
+   @property(number)public xspeed : number = 0;
+   
    @property
    accce : number;
    @property
