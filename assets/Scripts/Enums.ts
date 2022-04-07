@@ -9,7 +9,7 @@ export enum AIBATTINGDIFFICULTY {
 
 }
 export enum SHOTTYPES {
-    EARLYSHOT = "EarlySot",
+    EARLYSHOT = "EarlyShot",
     GOODSHOT = "GoodShot",
     PERFECT = "PerfectShot",
     LATESHOT = "LateShot"
