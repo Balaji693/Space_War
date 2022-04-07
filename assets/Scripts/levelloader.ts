@@ -32,6 +32,9 @@ export class Levelloader extends Component {
            case macro.KEY.enter:
             director.loadScene("scene");    
            break;
+           case macro.KEY.r:
+            director.loadScene("scene2");    
+           break;
       
         }
 
