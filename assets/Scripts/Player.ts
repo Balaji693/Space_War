@@ -1,7 +1,4 @@
 import { _decorator, Component, Vec3, systemEvent, SystemEvent, EventMouse, Animation, SystemEventType, EventKeyboard, macro, math, Vec2, Node, RigidBody2D, v2, RigidBody, Prefab, instantiate, game, Game, director } from 'cc';
-import { Bullet } from './bullet';
-
-import { Testing } from './testing';
 const { ccclass, property } = _decorator;
 
  
