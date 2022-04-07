@@ -21,8 +21,8 @@ export class Player extends Component {
   xspeed: number = 1000;
   @property(Number)public   accce: number = 0;
 
-  @property
-  maxmovement: number;
+  @property(Number) public maxmovement: number = 0;
+  
   @property
   x: Vec3;
   @property(Node) public playernode: Node = null;
