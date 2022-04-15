@@ -5,12 +5,6 @@ const { ccclass, property } = _decorator;
 @ccclass('Bullet')
 
 export class Bullet extends Component {
-    // [1]
-    // dummy = '';
-
-    // [2]
-    // @property
-    // serializableDummy = 0;
     direction: number = 1;
    rb : RigidBody;
    @property(Prefab) public prefabs:Prefab = null;
