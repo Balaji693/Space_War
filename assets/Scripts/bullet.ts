@@ -15,7 +15,7 @@ export class Bullet extends Component {
    rb : RigidBody;
    @property(Prefab) public prefabs:Prefab = null;
 
-    walkforce: number = 10;
+    walkforce: number = 0;
     onLoad()
     {
         let rigidBody = this.node.getComponent(RigidBody) as RigidBody;
