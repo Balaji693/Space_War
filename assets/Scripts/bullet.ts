@@ -23,7 +23,7 @@ export class Bullet extends Component {
    }
     start () 
     {
-        // [3]
+      
         let rigidBody = this.node.getComponent(RigidBody) as RigidBody;
       let collider = this.node.getComponent(Collider)!;
       
