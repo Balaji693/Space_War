@@ -20,12 +20,6 @@ export class Bullet extends Component {
            
     
             collider.on("onCollisionEnter", this.onCollisionEnter, this);
-       
-    // this.rb =  this.node.getComponent(RigidBody2D);
-   //
-    //   this.direction = 1;
-    //   this.velocity = 10;
-     //  this.walkforce = 10;
    }
     start () 
     {
