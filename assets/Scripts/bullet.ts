@@ -15,11 +15,8 @@ export class Bullet extends Component {
         let rigidBody = this.node.getComponent(RigidBody) as RigidBody;
         let collider = this.node.getComponent(Collider)!;
     
-        collider.off("onCollisionEnter", this.onCollisionEnter, this);
-        
-           
-    
-            collider.on("onCollisionEnter", this.onCollisionEnter, this);
+        collider.off("onCollisionEnter", this.onCollisionEnter, this);  
+         collider.on("onCollisionEnter", this.onCollisionEnter, this);
    }
     start () 
     {
