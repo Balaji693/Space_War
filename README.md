@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# Master
+# MasterUpdate
 =======
 # Testing
 Hello World
