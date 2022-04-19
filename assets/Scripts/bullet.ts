@@ -30,7 +30,9 @@ export class Bullet extends Component {
    
 >>>>>>> 7ca326a686639cd7ca3f35de19dca531a41099a0
 start(){
-    
+      let number = 10;
+     let numbe2 = 10;
+
 }
     onCollisionEnter (event: ICollisionEvent) {
   
