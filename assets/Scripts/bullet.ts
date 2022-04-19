@@ -26,9 +26,13 @@ export class Bullet extends Component {
     // let number4 = 10;;
 =======
      let number3 = 10;
+<<<<<<< HEAD
      let number4 = 10;
     let number5 = 10;
 >>>>>>> master
+=======
+        let number6;
+>>>>>>> 52d2876ffdd3283b0c40fafa28a428cb20996f8a
 }
     onCollisionEnter (event: ICollisionEvent) {
   
