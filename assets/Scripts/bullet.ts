@@ -32,8 +32,30 @@ export class Bullet extends Component {
 >>>>>>> 0030c98242801428902353d2e77ef338b73f8120
 =======
         let numbr 10;
+<<<<<<< HEAD
 >>>>>>> e44b492af297774e047a85696663fd8c02c25bcd
 }              
+=======
+        let numbr 11;
+        let numbr 12;
+        let numbr 13;
+}
+    onCollisionEnter (event: ICollisionEvent) {
+  
+    
+        if (event.otherCollider.node.name !== 'bullet') {
+            
+         
+          this.node.destroy();
+          
+         return;
+      }
+    
+    }
+    
+       
+    
+>>>>>>> 01f5989634fac07402520a1ce7e96e067770307b
      update(dt)
      
     {
