@@ -17,15 +17,7 @@ export class Bullet extends Component {
     
         collider.off("onCollisionEnter", this.onCollisionEnter, this);  
          collider.on("onCollisionEnter", this.onCollisionEnter, this);
-   }
-    start () 
-    {
-      
-        let rigidBody = this.node.getComponent(RigidBody) as RigidBody;
-      let collider = this.node.getComponent(Collider)!;
-      
-    }
-   
+   }  
     onCollisionEnter (event: ICollisionEvent) {
   
     
@@ -47,19 +39,6 @@ export class Bullet extends Component {
         this.rb = this.node.getComponent(RigidBody);
         this.rb.applyLocalForce(new Vec3(0, 4000, -3000), new Vec3(0, 10000, 0));
     }
-        
-    // update (deltaTime: number) {
-    //     // [4]
-    // }
+
 }
 
-/**
- * [1] Class member could be defined like this.
- * [2] Use `property` decorator if your want the member to be serializable.
- * [3] Your initialization goes here.
- * [4] Your update function goes here.
- *
- * Learn more about scripting: https://docs.cocos.com/creator/3.0/manual/en/scripting/
- * Learn more about CCClass: https://docs.cocos.com/creator/3.0/manual/en/scripting/ccclass.html
- * Learn more about life-cycle callbacks: https://docs.cocos.com/creator/3.0/manual/en/scripting/life-cycle-callbacks.html
- */
