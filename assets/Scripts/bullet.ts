@@ -30,8 +30,12 @@ export class Bullet extends Component {
 >>>>>>> 52d2876ffdd3283b0c40fafa28a428cb20996f8a
 =======
         let number7;
+<<<<<<< HEAD
         let changes;
 >>>>>>> eba31dc1e8434c657e7bee5e7ea32dbc5a0ea321
+=======
+        let number8;
+>>>>>>> c7cb844a784cb500040794d08fd39f93b8421987
 }
     onCollisionEnter (event: ICollisionEvent) {
   
