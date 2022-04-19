@@ -20,9 +20,7 @@ export class Bullet extends Component {
 }
     start(){
 
-<<<<<<< HEAD
-     let number4 = 10;
-    let number5 = 10;
+
 >>>>>>> master
 =======
         let number6;
