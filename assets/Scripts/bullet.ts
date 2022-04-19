@@ -24,6 +24,7 @@ export class Bullet extends Component {
      let number3 = 10;
      let number4 = 10;
     let number5 = 10;
+        let number6;
 }
     onCollisionEnter (event: ICollisionEvent) {
   
