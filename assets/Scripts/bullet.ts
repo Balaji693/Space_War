@@ -10,17 +10,8 @@ export class Bullet extends Component {
    @property(Prefab) public prefabs:Prefab = null;
 
     walkforce: number = 0;
-    onLoad()
-    {
-        let rigidBody = this.node.getComponent(RigidBody) as RigidBody;
-        let collider = this.node.getComponent(Collider)!;
-    
 
-
-}
     start(){
-
-
 >>>>>>> master
 =======
         let number6;
@@ -42,22 +33,7 @@ export class Bullet extends Component {
 =======
         let numbr 10;
 >>>>>>> e44b492af297774e047a85696663fd8c02c25bcd
-}
-    onCollisionEnter (event: ICollisionEvent) {
-  
-    
-        if (event.otherCollider.node.name !== 'bullet') {
-            
-         
-          this.node.destroy();
-          
-         return;
-      }
-    
-    }
-    
-       
-    
+}              
      update(dt)
      
     {
