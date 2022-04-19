@@ -26,6 +26,7 @@ export class Bullet extends Component {
       
         let rigidBody = this.node.getComponent(RigidBody) as RigidBody;
       let collider = this.node.getComponent(Collider)!;
+        let interact = 10;
       
     }
    
