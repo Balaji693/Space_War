@@ -7,7 +7,7 @@ export class Player extends Component {
   left: boolean;
   @property
   xspeed: number = 1000;
-  @property(Number)public   accce: number = 0;
+  @property(Number)public   accce: number = 10;
 
   @property(Number) public maxmovement: number = 0;
   
