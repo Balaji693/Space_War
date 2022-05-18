@@ -9,7 +9,7 @@ export class Player extends Component {
   xspeed: number = 1000;
   @property(Number)public   accce: number = 10;
 
-  @property(Number) public maxmovement: number = 210;
+  @property(Number) public maxmovement: number = hello;
   
   @property
   x: Vec3;
